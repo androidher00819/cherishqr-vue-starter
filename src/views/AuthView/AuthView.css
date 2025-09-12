@@ -1,0 +1,52 @@
+/* Theme nav-pills to #4b225a */
+.nav-pills .nav-link { color: #4b225a !important; border-radius: 0 !important; }
+.nav-pills .nav-link:hover { color: #4b225a !important; }
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link { background-color: #4b225a !important; color: #ffffff !important; border-radius: 0 !important; }
+.nav-pills .nav-link:focus { box-shadow: none; }
+
+.auth-logo { height: 48px; width: auto; }
+.card { border: 2px solid #4b225a; border-radius: 0; }
+/* Remove rounded corners on form fields */
+.form-control, .form-select { border-radius: 0; }
+.form-check-input { border-radius: 0; }
+/* Inputs themed to #4b225a */
+.form-control, .form-select { border-color: #4b225a; color: #4b225a; caret-color: #4b225a; }
+.form-check-input { border-color: #4b225a; }
+.form-check-input:checked { background-color: #4b225a; border-color: #4b225a; }
+/* Focus */
+.form-control:focus, .form-select:focus {
+  border-color: #4b225a;
+  box-shadow: none;
+}
+.form-check-input:focus { box-shadow: none; border-color: #4b225a; }
+/* Square corners for buttons */
+.btn, button { border-radius: 0 !important; }
+/* Themed primary buttons */
+.btn-primary { background-color: #4b225a !important; border-color: #4b225a !important; }
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active { background-color: #4b225a !important; border-color: #4b225a !important; }
+/* Password toggle button */
+.toggle-password { color: #4b225a; text-decoration: none; }
+.toggle-password:hover, .toggle-password:focus { color: #4b225a; opacity: 0.85; }
+/* Ensure the input has padding to avoid overlap (already set via pe-5 in template) */
+/* Align eye icon perfectly inside input */
+.toggle-password {
+  line-height: 1;
+}
+.position-relative .form-control.pe-5 { padding-right: 2.5rem; }
+
+/* Text-only loader dots (blinking) */
+.loader-dots { position: relative; display: inline-flex; align-items: center; }
+.loader-dots .dot { display: inline-block; width: 0.5ch; text-align: center; animation: loaderBlink 1s infinite; opacity: 0.25; }
+.loader-dots .dot:nth-child(2) { animation-delay: .2s; }
+.loader-dots .dot:nth-child(3) { animation-delay: .4s; }
+
+@keyframes loaderBlink {
+  0% { opacity: 0.25; }
+  20% { opacity: 1; }
+  100% { opacity: 0.25; }
+}
+
+/* Keep buttons from shrinking when disabled */
+button[disabled] { opacity: 0.85; }

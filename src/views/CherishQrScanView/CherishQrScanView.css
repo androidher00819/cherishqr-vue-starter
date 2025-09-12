@@ -1,0 +1,56 @@
+/* Max width for the inner container */
+.cq-view-max {
+  max-width: 680px;
+}
+
+/* Consistent logo sizing for image and SVG */
+.cq-logo-size {
+  max-width: 610px;
+  width: 85vw;
+}
+
+/* Brand-styled primary button */
+.cq-btn-primary {
+  background-color: #4b225a;
+  border-color: #4b225a;
+  color: #fff; /* ensure text stays white */
+  transition: filter 120ms ease, transform 80ms ease; /* avoid bootstrap color transition */
+}
+.cq-btn-primary:hover,
+.cq-btn-primary:focus {
+  background-color: #4b225a;
+  border-color: #4b225a;
+  color: #fff;
+  filter: brightness(1.05);
+}
+.cq-btn-primary:disabled {
+  opacity: 0.8;
+}
+/* Keep brand color on click/focus and override Bootstrap blue focus ring */
+.cq-btn-primary:focus,
+.cq-btn-primary:focus-visible,
+.cq-btn-primary:active,
+.cq-btn-primary:active:focus,
+.cq-btn-primary.show,
+.show > .cq-btn-primary.dropdown-toggle {
+  background-color: #4b225a !important;
+  border-color: #4b225a !important;
+  color: #fff !important;
+  box-shadow: 0 0 0 0.25rem rgba(75, 34, 90, 0.25) !important;
+}
+
+/* Override Bootstrap 5 button CSS variables so all states use brand color */
+.btn.cq-btn-primary {
+  --bs-btn-bg: #4b225a;
+  --bs-btn-border-color: #4b225a;
+  --bs-btn-hover-bg: #4b225a;
+  --bs-btn-hover-border-color: #4b225a;
+  --bs-btn-active-bg: #4b225a;
+  --bs-btn-active-border-color: #4b225a;
+  --bs-btn-focus-shadow-rgb: 75, 34, 90;
+}
+
+/* Small utility absent in Bootstrap */
+.letter-spacing-08 {
+  letter-spacing: 0.08em;
+}
