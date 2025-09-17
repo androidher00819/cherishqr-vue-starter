@@ -139,4 +139,6 @@ onMounted(() => {
 }
 /* Global: remove rounded corners on buttons */
 button, .btn { border-radius: 0 !important; }
+/* Global font for all h2 */
+h2 { font-family: 'Poppins', sans-serif !important; }
 </style>
