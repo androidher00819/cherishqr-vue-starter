@@ -5,6 +5,6 @@ export default defineConfig({
 
   plugins: [vue()],
 
-  base: '/cherishqr-vue-starter/profile/'
+  base: '/cherishqr-vue-starter/'
 })
 
