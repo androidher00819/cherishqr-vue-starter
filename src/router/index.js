@@ -10,7 +10,7 @@ import CherishQrScan from '../views/CherishQrScanView/CherishQrScanView.vue'
 import AuthView from '../views/AuthView/AuthView.vue'
 
 const routes = [
-  { path: '/', redirect: '/profile-options' },
+  { path: '/', redirect: '/auth' },
   { path: '/upload', component: UploadView },
   { path: '/music', component: MusicView },
   { path: '/theme', component: ThemeView },
